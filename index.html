@@ -1,7 +1,7 @@
 <html>
     <head>
         <title>This is a test</title>
-        <script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
+        <!--<script src="https://cdn.onesignal.com/sdks/OneSignalSDK.js" async=""></script>
         <script>
           var OneSignal = window.OneSignal || [];
           OneSignal.push(function() {
@@ -9,7 +9,18 @@
               appId: "b4bd00ae-122a-4c2f-9241-18b8dc55726e",
             });
           });
-        </script>
+        </script>-->
+        <link rel="manifest" href="/manifest.json">
+        <!-- OtherLevels stylesheet -->
+        <link href="https://cdn.otherlevels.com/js-sdk/otherlevels.css?appKey=7e45c406f16be97a0fdba58d0c6a7222" rel="stylesheet">
+        <!-- Asynchronously load Otherlevels library -->
+        <script type="text/javascript">
+          (function(i,d,k,f,a){var _s,_f;i.OtherLevelsObject=f;
+          if(i[f]===undefined){i[f]=function(){i[f].q.push(arguments)
+          };i[f].q=[]}_s=d.createElement(k);_s.src=a;_s.async=true;
+          _f=d.getElementsByTagName(k)[0];_f.parentNode.insertBefore(_s,_f)
+          })(window,document,"script","_ol","https://cdn.otherlevels.com/js-sdk/otherlevels.js?appKey=7e45c406f16be97a0fdba58d0c6a7222");
+    </script>
     </head>
     <body>
         <h1>This is a test</h1>
