@@ -27,20 +27,11 @@
     </body>
     <script>
         _ol('create', '7e45c406f16be97a0fdba58d0c6a7222', {
-             logLevel: 1,
-            
-          }, function() {
-            alert('Session created');
-            console.log('Session created');
-          }
-        );
+             logLevel: 1    
+        });
         
-        _ol('push.isSupported', function(isSupported) {
-            console.log('Push supported: '+ isSupported)
-        });
+        _ol('push.isSupported');
             
-        _ol('push.subscribe', function() {
-            console.log('Suscribed');
-        });
+        _ol('push.subscribe');
     </script>
 </html>
