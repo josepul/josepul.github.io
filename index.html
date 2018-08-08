@@ -15,7 +15,6 @@
         <link href="https://cdn.otherlevels.com/js-sdk/otherlevels.css?appKey=7e45c406f16be97a0fdba58d0c6a7222" rel="stylesheet">
         <!-- Asynchronously load Otherlevels library -->
         <script type="text/javascript">
-          importScripts("https://cdn.otherlevels.com/js-sdk/ol-service-worker.js?appKey=7e45c406f16be97a0fdba58d0c6a7222");
           (function(i,d,k,f,a){var _s,_f;i.OtherLevelsObject=f;
           if(i[f]===undefined){i[f]=function(){i[f].q.push(arguments)
           };i[f].q=[]}_s=d.createElement(k);_s.src=a;_s.async=true;
@@ -28,7 +27,7 @@
     </body>
     <script>
         _ol('create', '7e45c406f16be97a0fdba58d0c6a7222', {
-            //serviceWorkerLocation:'/test/ol-service-worker.js',
+            serviceWorkerLocation:'/test/ol-service-worker.js?apiKey=dafsdfasdfasf',
             logLevel: 1,
             baseDomain: 'github.io',
             primarySubdomain: 'josepul.github.io'
